@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #e2e2e2;
+}
+
+header {
+    display: flex;
+    margin-bottom: 40px;
+    padding-top: 3%;
+    justify-content: center;
+}
+
+header img {
+    width: 53px;
+    margin-right: 10px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+form {
+    display: block;
+    max-width: 980px;
+    width: 100%;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+form input {
+    font-size: 16px;
+    background-color: #ffff;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#nome-contato {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+#numero-contato {
+    width: 20%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+#email-contato {
+    width: 73%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    position: static;
+}
+
+.botao {
+    display: flex;
+    width: 30%;
+    height: auto;
+    border: none;
+    left: 35%;
+    position: absolute;
+}
+
+
+#botao-adiciona, #botao-exclui {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.5);
+}
+
+#botao-adiciona {
+    background-color: #1bb818;
+    margin-right: 5px;
+}
+
+#botao-adiciona:hover {
+    background-color: #4fd04c;
+}
+
+#botao-adiciona:active {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.5), inset 2px 2px 2px rgba(0,0,0,0.5);
+    transform: translate(3px,3px);
+    transition: box-shadow 0.3 ease, transform 0.3 ease;
+}
+
+#botao-exclui {
+    background-color: #ff0000;
+    margin-left: 5px;
+}
+
+#botao-exclui:hover {
+    background-color: #ff6449;
+}
+
+#botao-exclui:active {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.5), inset 2px 2px 2px rgba(0,0,0,0.5);
+    transform: translate(3px,3px);
+    transition: box-shadow 0.3 ease, transform 0.3 ease;
+}
+
+table {
+    padding-top: 10%;
+    width: 100%;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+    margin-top: 3%;
+}
+
+table th {
+    border-bottom: 2px solid #000;
+    padding: 16px 0;
+    padding-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+table td {
+    padding: 16px 0;
+    text-align: center;
+    font-size: ;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+#lixeira {
+    width: 20px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 11px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
+}
