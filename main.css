@@ -37,11 +37,16 @@ header h1 {
     position: relative;
 }
 
+.formulario {
+    background-color: #dadadaf0;
+    padding: 10px;
+    border-radius: 7px;
+}
+
 form {
-  /*  display: block; */
+    display: block;
     max-width: 980px;
     width: 100%;
-    margin-bottom: 40px;
     justify-content: space-between;
 }
 
@@ -52,30 +57,25 @@ form input {
     border-bottom: 1px solid #000;
     padding: 8px;
     box-sizing: border-box;
+} 
+
+#nome-completo, #contato {
+    display: flex;
+    justify-content: space-between;
+    padding: auto;
+    margin: 5px;
 }
 
-#nome-contato {
-    width: 100%;
-    height: auto;
-    margin-bottom: 2%;
-    border-radius: 5px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-}
-
-#numero-contato {
+#nome-contato, #numero-contato{
     width: 20%;
-    height: auto;
-    margin-right: 10px;
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
 }
 
-#email-contato {
+#sobrenome-contato, #email-contato {
     width: 78.3%;
-    height: auto;
     border-radius: 5px;
     box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
-    position: static;
 }
 
 .botao {
@@ -85,10 +85,10 @@ form input {
     border: none;
     left: 35%;
     position: absolute;
+    padding-top: 20px;
 }
 
-
-#botao-adiciona, #botao-exclui {
+#botao-adicionar, #botao-excluir {
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
@@ -102,31 +102,31 @@ form input {
     box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.5);
 }
 
-#botao-adiciona {
+#botao-adicionar {
     background-color: #1bb818;
     margin-right: 5px;
 }
 
-#botao-adiciona:hover {
+#botao-adicionar:hover {
     background-color: #4fd04c;
 }
 
-#botao-adiciona:active {
+#botao-adicionar:active {
     box-shadow: 0 0 0 0 rgba(0,0,0,0.5), inset 2px 2px 2px rgba(0,0,0,0.5);
     transform: translate(3px,3px);
     transition: box-shadow 0.3 ease, transform 0.3 ease;
 }
 
-#botao-exclui {
+#botao-excluir {
     background-color: #ff0000;
     margin-left: 5px;
 }
 
-#botao-exclui:hover {
+#botao-excluir:hover {
     background-color: #ff6449;
 }
 
-#botao-exclui:active {
+#botao-excluir:active {
     box-shadow: 0 0 0 0 rgba(0,0,0,0.5), inset 2px 2px 2px rgba(0,0,0,0.5);
     transform: translate(3px,3px);
     transition: box-shadow 0.3 ease, transform 0.3 ease;
@@ -137,6 +137,7 @@ table {
     width: 100%;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.1);
     margin-top: 3%;
+    justify-content: space-around;
 }
 
 table th {

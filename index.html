@@ -19,23 +19,26 @@
         </header>
         
         <div class="container">
-
-            <form>
-                <div>
-                    <input type="text" id="nome-contato" required placeholder="Nome completo">
-                </div>
-                <div id="contato">
-                    <input type="tel" id="numero-contato" placeholder="Telefone">
-                    <input type="email" id="email-contato" placeholder="E-mail">
-                </div>
-            </form>
-
-            <div class="botao">
-                <button type="submit" id="botao-adiciona">Adicionar +</button>
-                <button type="reset" id="botao-exclui">Excluir -</button>
+            <div class="formulario">
+                <form id="agenda">
+                    <div id="nome-completo">
+                        <input type="text" id="nome-contato" required placeholder="Nome">
+                        <input type="text" id="sobrenome-contato" required placeholder="Sobrenome">
+                    </div>
+                        
+                    <div id="contato">
+                        <input type="tel" id="numero-contato" placeholder="Telefone com DDD">
+                        <input type="email" id="email-contato" placeholder="E-mail">
+                    </div>
+                </form>
             </div>
 
-            <table cellspacing="0">
+            <div class="botao">
+                <button type="submit" id="botao-adicionar">Adicionar +</button>
+                <button type="reset" id="botao-excluir">Excluir -</button>
+            </div>
+
+            <table class="tabela" cellspacing="0">
                 <thead>
                     <tr>
                         <th><input type="checkbox"></th>
@@ -49,14 +52,8 @@
                 </thead>
 
                 <tbody id="contatos-tabela">
-                    <tr> <!---->
-                        <td><input type="checkbox"></th></td>
-                        <td>Rodrigo dos Santos Barros</td>
-                        <td>(21) 969804379</td>
-                        <td>rodrigodossantosbarros@gmail.com</td>
-                        <td>
-                            <img src="./imagens/lixeira.png" id="lixeira" alt="Logo da agenda de contatos do Google">
-                        </td>
+                    <tr>
+                        <!--Deixar em branco para que o JS capture os dados e preencha a tabela de contatos-->
                     </tr>
                 </tbody>
             </table>
